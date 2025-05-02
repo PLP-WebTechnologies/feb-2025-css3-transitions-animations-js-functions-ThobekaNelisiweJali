@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Skincare</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Shop Now</a></li>
+      <li><a href="#reviews">Customer Reviews</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <h1>Glow Skincare</h1>
+    <p>Reveal your natural glow with our premium products</p>
+    <button onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' })">Shop Now</button>
+
+  </header>
+
+  <section id="about">
+    <div class="about-wrapper">
+      <h2>About Us</h2>
+      <p>At Glow Skincare, we believe in holistic beauty that nurtures your skin from the inside out. Our mission is to empower individuals to embrace their natural glow by providing skincare solutions that are not only effective but also safe, gentle, and rooted in nature.</p>
+      
+      <p>Each of our products is thoughtfully formulated using premium natural ingredients—free from harmful chemicals and harsh additives—to restore balance, hydration, and vitality to all skin types. Whether you're looking to combat dryness, improve skin tone, or simply pamper yourself, we have something for you.</p>
+      
+      <p>Sustainability is at the heart of everything we do. We are proud to use eco-friendly packaging, support ethical sourcing, and remain 100% cruelty-free. When you choose Glow Skincare, you're not just choosing radiant skin—you’re choosing a brand that cares for people, animals, and the planet.</p>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Our Bestsellers</h2>
+    <div class="product-container">
+      <div class="product-card">
+        <img src="a.jpg" alt="Facial Cleanser">
+        <h3>Gentle Cleanser</h3>
+        <p>Purifies your skin without drying it out.</p>
+      </div>
+      <div class="product-card">
+        <img src="b.jpg" alt="Hydrating Moisturizer">
+        <h3>Hydrating Moisturizer</h3>
+        <p>Locks in moisture and gives you a radiant glow.</p>
+      </div>
+      <div class="product-card">
+        <img src="c.jpg" alt="Vitamin C Serum">
+        <h3>Vitamin C Serum</h3>
+        <p>Brightens and revitalizes dull skin.</p>
+      </div>
+  
+      
+      <div class="product-card">
+        <img src="d.jpg" alt="Refreshing Toner">
+        <h3>Refreshing Toner</h3>
+        <p>Balances pH and preps your skin for hydration.</p>
+      </div>
+      <div class="product-card">
+        <img src="e.jpg" alt="Detox Face Mask">
+        <h3>Detox Face Mask</h3>
+        <p>Draws out impurities for clear, smooth skin.</p>
+      </div>
+      <div class="product-card">
+        <img src="f.jpg" alt="Nourishing Eye Cream">
+        <h3>Nourishing Eye Cream</h3>
+        <p>Reduces puffiness and fine lines around your eyes.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="preferences">
+    <h2>Your Skincare Pick</h2>
+    <label for="productSelect">Choose your favorite product:</label>
+    <select id="productSelect" onchange="savePreference()">
+      <option value="">-- Select --</option>
+      <option value="Gentle Cleanser">Gentle Cleanser</option>
+      <option value="Hydrating Moisturizer">Hydrating Moisturizer</option>
+      <option value="Vitamin C Serum">Vitamin C Serum</option>
+      <option value="Refreshing Toner">Refreshing Toner</option>
+      <option value="Detox Face Mask">Detox Face Mask</option>
+      <option value="Nourishing Eye Cream">Nourishing Eye Cream</option>
+    </select>
+    <button onclick="showPreference()">Show My Pick</button>
+    <p id="preferenceDisplay"></p>
+  </section>
+
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="reviews-grid">
+      <div class="review" data-aos="fade-up">
+        <p><strong>Jane D.:</strong> "The cleanser is my holy grail! Love the way it makes my skin feel."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review" data-aos="fade-up" data-aos-delay="100">
+        <p><strong>Michael R.:</strong> "I've never had such hydrated skin. The moisturizer is a game-changer."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review" data-aos="fade-up" data-aos-delay="200">
+        <p><strong>Sophie K.:</strong> "The toner gives me a refreshing boost every morning. I’m hooked!"</p>
+        <div class="stars">★★★★☆</div>
+      </div>
+      <div class="review" data-aos="fade-up" data-aos-delay="300">
+        <p><strong>Daniel M.:</strong> "My skin feels so clean and nourished. Highly recommend the face mask!"</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="blog">
+    <h2>From Our Blog</h2>
+    <div class="blog-post">
+      <h3>5 Skincare Myths Debunked</h3>
+      <p>Don't let false info ruin your glow. Here are truths every skincare lover should know...</p>
+    </div>
+    <div class="blog-post">
+      <h3>Morning vs. Night Routine</h3>
+      <p>Ever wonder what products to use and when? Here's our step-by-step guide for optimal results.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Glow Skincare. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
